@@ -1,0 +1,431 @@
+/*add background image for home and repeat it*/
+#home-background {
+	background-image: url("images/home-background.jpg");
+	background-repeat: repeat;
+}
+
+/*set background position*/
+#bg {
+  	position: fixed; 
+  	top: -50%; 
+ 	left: -50%; 
+  	width: 200%; 
+  	height: 200%;
+	z-index: -1;
+}
+
+/* style and position the sources under each image*/
+
+/* set the position of all images inside the class of bg so all images don't get affected*/
+#bg img {
+  	position: absolute; 
+  	top: 0; 
+  	left: 0; 
+  	right: 0; 
+  	bottom: 0; 
+  	margin: auto; 
+  	min-width: 50%;
+  	min-height: 50%;
+  	z-index:-1;
+}
+
+/*for all headings of each page*/
+h1 {
+	font-family: Garamond;
+    	font-size: 90px;
+    	padding: 50px;
+    	color: #63250d;	
+	text-align: center;
+}
+
+/*border attributes and filter for background of every heading*/
+.title {
+	filter:contrast(0.8);
+    	border: 100px groove;
+    	border-width: thick;
+	border-radius: 200px;	
+}
+
+/*background of heading in in all pages*/
+#home-title {
+    	background-image: url("images/home-title.jpg");
+}
+
+#art-title {
+	background-image: url("images/art-title.jpg");
+}
+
+#sports-title {
+	background-image: url("images/sports-title.jpg");
+}
+
+#future-goals-title {
+	background-image: url("images/future-goals-title.jpg");
+}
+
+#travel-title {
+	background-image: url("images/travel-title.jpg");
+}
+
+#reference-title {
+	background-image: url("images/reference-title.jpg");
+}
+
+
+/*adgust position and size for icons on each page*/
+.icons {
+	width: 100px;
+	display: block;
+	margin-left: auto;
+ 	margin-right: auto;
+	padding: 20px;
+	z-index:1;
+    	margin: 30px 870px;
+	background-image: url("images/icon-bg.jpg");
+    	border-radius: 35px;
+    	margin: 30px 870px;
+}
+
+/*add background color to the navigation */
+.navigation {
+	background-color: #783d2f;
+  	overflow: hidden;
+}
+
+/* style the links inside the navigation bar */
+.navigation a {
+  	float: left;
+  	color: #f2f2f2;
+  	text-align: center;
+  	padding: 16px 16px;
+  	text-decoration: none;
+  	font-size: 18px;
+}
+
+/* change the color of links on hover */
+.navigation a:hover {
+  	background-color: #ddd;
+  	color: black;
+}
+
+/* add a color to the active link */
+.navigation a.active {
+  	background-color: #c79f41;
+  	color: white;
+}
+
+/* determine how side bar looks from outside */
+.side-navigation {
+	width: 160px;
+    	height: 50px;
+    	position: fixed;
+    	z-index: 1;
+    	top: 300px;
+    	left: 10px;
+    	background: #783d2f;
+    	overflow-x: hidden;
+    	padding: 8px;
+    	border-radius: 100px;
+}
+
+/* determine how side bar looks from inside */
+.side-navigation a {
+  	padding: 6px 8px 6px 16px;
+  	text-decoration: none;
+	font-size: 18px;
+  	color:  #f2f2f2;
+  	display: block;
+}
+
+/* change color when it hovering */
+.side-navigation a:hover {
+  	background-color: #ddd;
+  	color: black;
+}
+
+/* set how it looks on the page */
+.main {
+  	margin-left: 140px; /* Same width as the sidebar + left position in px */
+  	font-size: 28px; /* Increased text to enable scrolling */
+  	padding: 0px 10px;
+}
+
+/* in case of smaller screen, make sure it doesn't look unprofessional*/
+@media screen and (max-height: 450px) {
+  	.side-navigation {padding-top: 15px;}
+  	.side-navigation a {font-size: 18px;}
+}
+
+/*style all subheadings with the same class*/
+.subheading {
+    	text-align: center;
+    	font-size: 40px;
+    	font-family: Garamond;
+    	color: #782402;
+}
+
+/* add style for the line underneath icon and subheading*/
+hr {
+	border-top: 5px dashed white;
+}
+
+/*style the paragraph underneath the line*/
+.intro {
+    	text-align: center;
+    	font-size: 35px;
+    	font-family: Garamond;
+    	color: #ddd;
+    	border: 6px solid black;
+    	border-radius: 6px;
+    	width: 1000px;
+	background-image: url("images/homesub-background.jpg");
+	margin: 0px 440px;
+	display: inline-block;
+}
+
+/*position the first brown bear gif*/
+#first-gif {
+	height: 256px;
+	width: 256px;
+	margin: 0px 70px;
+	float: left;
+	border: 25px dashed #ba6541;
+}
+
+/*position the second brown bear gif*/
+#second-gif {
+	height: 256px;
+    	width: 256px;
+    	float: right;
+    	margin: 0px 70px;
+	border: 25px dashed #ba6541;
+	
+}
+
+/*style title of table*/
+#table-of-contents {
+	font-size: 50px;
+    	text-align: center;
+    	font-family: Garamond;
+	color: #ddd;
+}
+
+/*style inside of the table*/
+table {
+	font-size: 30px;
+    	text-align: center;
+    	margin: 0px 550px;
+	border: 4px groove black;
+}
+
+/*style the first row with all the headings*/
+#tabheading {
+	background-color: black;
+	color: #ddd;
+	text-align: center;
+}
+
+/*style all the odd number of rows*/
+.rowOne {
+	background-color: #ba6541;	
+}
+
+/*style all the even number of rows*/
+.rowTwo {
+	background-color: #ddd;
+}
+
+/* set all the images in one elemnet */
+.gallery-item{
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 50%;
+	border: 10px dashed white;
+}
+ 
+/*style all the art pieces title*/
+.art-title {
+	text-align: center;
+    	font-size: 75px;
+    	font-family: Garamond;
+    	color: darkslategray;
+    	margin: 95px;
+}
+
+/*style all the art pieces captions*/
+.caption {
+	border: 5px dashed lavenderblush;
+    	height: 200px;
+    	font-size: 28px;
+	margin: 99px 100px 99px 200px;
+    	font-family: Garamond;
+    	color: brown;
+}
+
+/*float the odd maps to the right */
+.right-map {
+	float:right;
+}
+
+/* float the even maps onto the left*/
+.left-map {
+	float:left;
+}
+
+/* set map of qatar*/
+#qatar {
+    	margin: 180px 40px 0px 200px;
+}
+
+/* set map of oman*/
+#oman {
+	margin: 100px 0px;
+}
+
+/* set map of canada*/
+#canada {
+    	margin: 180px 40px 0px 200px;
+}
+
+/* set cities of pakistan*/
+.pak-cities {
+    	font-size: 40px;
+    	margin: 10px 400px;
+    	background-color: cornsilk;
+	font-family: Garamond;
+}
+
+/* set cities of oman*/
+.oman-cities {
+    	font-size: 40px;
+    	margin: 100px 400px;
+    	background-color: cornsilk;
+	font-family: Garamond;
+}
+
+/* set cities of qatar*/
+.qatar-cities {
+    	font-size: 30px;
+    	margin: 180px 200px;
+    	background-color: CornSilk;
+    	font-family: Garamond;
+}
+
+/* set cities of canada*/
+.canada-cities {
+    	font-size: 30px;
+    	margin: 180px 200px;
+    	background-color: CornSilk;
+    	font-family: Garamond;
+}
+
+/* set pakistan caption*/
+#pak-cap {
+	margin: 0px 120px;
+}
+
+/* set qatar caption*/
+#qatar-cap {
+	margin: 0px 810px;
+}
+
+/* set oman caption*/
+#oman-cap {
+	margin: 0px 130px;
+}
+
+/* set canada caption*/
+#canada-cap {
+
+	margin: 0px 810px;
+}
+
+/* change color of all links*/
+a {
+	color: CornSilk;
+}
+
+/* set the wish countries list*/
+#country-list {
+	font-size: 45px;
+	color: brown;
+	text-align: center;
+	font-family: Garamond
+	
+}
+
+/*position the div for overlayed image*/
+.container {
+  	position: relative;
+  	width: 50%;
+}
+
+/* position the image of sport*/
+.image {
+  	display: block;
+  	width: 100%;
+  	height: auto;
+}
+
+/* create overlay so you can see text*/
+.overlay {
+  	position: absolute;
+  	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	height: 100%;
+  	width: 100%;
+  	opacity: 0;
+  	transition: .5s ease;
+  	background-color: #f0b2af;
+}
+
+/* show text when user hovers over image*/
+.container:hover .overlay {
+  	opacity: 1;
+}
+
+/* style the text in overlay*/
+.text {
+  	color: white;
+  	font-size: 20px;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	-webkit-transform: translate(-50%, -50%);
+  	-ms-transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%);
+  	text-align: center;
+}
+
+/* create title to let the reader know to hover*/
+#hover-title {
+	font-size: 45px;
+	font-family: Garamond;
+	text-align: center;
+}
+
+/* set positioning for volleyball image*/
+#volleyball {
+	margin: 0px 450px;
+}
+
+
+/* set positioning for badminton image*/
+#badminton {
+	margin: 100px 450px;
+}
+
+
+/* set positioning for basketball image*/
+#basketball {
+	margin: 100px 450px;
+}
+
+/* style and position the sources under each image*/
+#gif-source {
+	margin:0px 200px
+}
+
